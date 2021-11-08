@@ -1,0 +1,23 @@
+14,20d13
+< 
+< 
+< 
+< --------------------------------------------------------------------------
+< --------------------------------------------------------------------------
+< --------------------------------------------------------------------------
+< --------------------------------------------------------------------------
+59d51
+< are not used by default.  The intent is to use UCX for these devices.
+62d53
+< By default, for Open MPI 4.0 and later, infiniband ports on a device
+82,86d72
+<   Local adapter:           hfi1_0
+<   Local device: hfi1_0
+<   Local host:   login2
+<   Local host:              login2
+<   Local port:              1
+94d79
+< to true.
+100,101d84
+< WARNING: There was an error initializing an OpenFabrics device.
+< You can override this policy by setting the btl_openib_allow_ib MCA parameter

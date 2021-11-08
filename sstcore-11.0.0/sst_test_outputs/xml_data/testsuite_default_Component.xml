@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" name="SST TESTING FRAMEWORKS" tests="1" time="4.86896109581">
+	<testsuite disabled="0" errors="0" failures="1" name="testsuite_default_Component" skipped="0" tests="1" time="4.86896109581">
+		<testcase classname="testcase_Component" name="test_Component" time="4.868961" timestamp="2021_0616_21:14:30.949712 utc">
+			<failure message="AssertionError: Output/Compare file /work2/07431/tg867305/stampede2/sstcore-11.0.0/sst_test_outputs/run_data/test_Component.out does not match Reference File /work2/07431/tg867305/stampede2/sstcore-11.0.0/tests/refFiles/test_Component.out " type="failure"/>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" name="SST TESTING FRAMEWORKS" tests="1" time="0.719573974609">
+	<testsuite disabled="0" errors="0" failures="1" name="testsuite_default_UnitAlgebra" skipped="0" tests="1" time="0.719573974609">
+		<testcase classname="testcase_UnitAlgebra" name="test_UnitAlgebra" time="0.719574" timestamp="2021_0616_21:15:03.624137 utc">
+			<failure message="AssertionError: Output/Compare file /work2/07431/tg867305/stampede2/sstcore-11.0.0/sst_test_outputs/run_data/test_UnitAlgebra.out does not match Reference File /work2/07431/tg867305/stampede2/sstcore-11.0.0/tests/refFiles/test_UnitAlgebra.out " type="failure"/>
+		</testcase>
+	</testsuite>
+</testsuites>

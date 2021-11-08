@@ -1,0 +1,20 @@
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              login2
+  Local adapter:           hfi1_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   login2
+  Local device: hfi1_0
+--------------------------------------------------------------------------
+ Loader0:mySubComp:mySubCompSlot.numSent : Accumulator : Sum.u32 = 15; SumSQ.u32 = 15; Count.u64 = 15; Min.u32 = 1; Max.u32 = 1; 
+ Loader1:mySubComp:mySubCompSlot.numRecv : Accumulator : Sum.u32 = 15; SumSQ.u32 = 15; Count.u64 = 15; Min.u32 = 1; Max.u32 = 1; 
+Simulation is complete, simulated time: 10 us

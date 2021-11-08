@@ -1,0 +1,12 @@
+prefix=/work2/07431/tg867305/stampede2/sstcore-11.0.0/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SSTCore
+Description: Structural Simulation Toolkit (SST) Parallel Discrete Event Core
+Version: 11.0.0
+URL: http://www.sst-simulator.org/
+Libs: -Wl,-undefined -Wl,dynamic_lookup
+Cflags: -DHAVE_CONFIG_H -I${includedir} -I${includedir}/sst  -I/work2/07431/tg867305/stampede2/openmpi-4.0.5/include
+

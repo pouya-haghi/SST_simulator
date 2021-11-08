@@ -343,14 +343,14 @@ hr_router::notifyEvent()
     	// with no branch.  For now it should work.
         int64_t tmp = in_port_busy[i] - elapsed_cycles;
         // PH: $start - "print busy ports"
-        std::cout << "busy_in " << tmp << " port_number " << i << " id " << id << std::endl;
+        // std::cout << "busy_in " << tmp << " port_number " << i << " id " << id << std::endl;
         // PH: $end
     	if ( tmp < 0 ) in_port_busy[i] = 0;
         else {in_port_busy[i] = tmp;
         }
         tmp = out_port_busy[i] - elapsed_cycles;
         // PH: $start - "print busy ports"
-        std::cout << "busy_out " << tmp << " port_number " << i << std::endl;
+        // std::cout << "busy_out " << tmp << " port_number " << i << std::endl;
         // PH: $end
     	if ( tmp < 0 ) out_port_busy[i] = 0;
         else {out_port_busy[i] = tmp;

@@ -1,0 +1,32 @@
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              login2
+  Local adapter:           hfi1_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   login2
+  Local device: hfi1_0
+--------------------------------------------------------------------------
+['--param=object_type:set', '--param=num_entities:12', '--param=full_initialization:true', '--param=multiple_initializers:true']
+{'multiple_initializers': 'true', 'num_entities': '12', 'object_type': 'set', 'full_initialization': 'true'}
+WARNING: Building component "obj0" with no links assigned.
+WARNING: Building component "obj1" with no links assigned.
+WARNING: Building component "obj2" with no links assigned.
+WARNING: Building component "obj3" with no links assigned.
+WARNING: Building component "obj4" with no links assigned.
+WARNING: Building component "obj5" with no links assigned.
+WARNING: Building component "obj6" with no links assigned.
+WARNING: Building component "obj7" with no links assigned.
+WARNING: Building component "obj8" with no links assigned.
+WARNING: Building component "obj9" with no links assigned.
+WARNING: Building component "obj10" with no links assigned.
+WARNING: Building component "obj11" with no links assigned.
+Simulation is complete, simulated time: 12 ns

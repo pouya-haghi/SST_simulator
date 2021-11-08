@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="12" name="SST TESTING FRAMEWORKS" tests="12" time="15.4063639641">
+	<testsuite disabled="0" errors="0" failures="12" name="testsuite_default_SubComponent" skipped="0" tests="12" time="15.4063639641">
+		<testcase classname="testcase_SubComponent" name="test_SubComponent_sc_2a" time="7.538292" timestamp="2021_0616_21:14:15.505382 utc">
+			<failure message="AssertionError: Output/Compare file /work2/07431/tg867305/stampede2/sstcore-11.0.0/sst_test_outputs/run_data/test_SubComponent_sc_2a.out does not match Reference File /work2/07431/tg867305/stampede2/sstcore-11.0.0/tests/subcomponent_tests/refFiles/test_sc_2a.out " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_SubComponent" name="test_SubComponent_sc_2u" time="0.717241" timestamp="2021_0616_21:14:23.045084 utc">
+			<failure message="AssertionError: Output/Compare file /work2/07431/tg867305/stampede2/sstcore-11.0.0/sst_test_outputs/run_data/test_SubComponent_sc_2u.out does not match Reference File /work2/07431/tg867305/stampede2/sstcore-11.0.0/tests/subcomponent_tests/refFiles/test_sc_2u.out " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_SubComponent" name="test_SubComponent_sc_2u2a" time="0.714098" timestamp="2021_0616_21:14:23.763723 utc">
+			<failure message="AssertionError: Output/Compare file /work2/07431/tg867305/stampede2/sstcore-11.0.0/sst_test_outputs/run_data/test_SubComponent_sc_2u2a.out does not match Reference File /work2/07431/tg867305/stampede2/sstcore-11.0.0/tests/subcomponent_tests/refFiles/test_sc_2u2a.out " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_SubComponent" name="test_SubComponent_sc_2u2u" time="0.713849" timestamp="2021_0616_21:14:24.479208 utc">
+			<failure message="AssertionError: Output/Compare file /work2/07431/tg867305/stampede2/sstcore-11.0.0/sst_test_outputs/run_data/test_SubComponent_sc_2u2u.out does not match Reference File /work2/07431/tg867305/stampede2/sstcore-11.0.0/tests/subcomponent_tests/refFiles/test_sc_2u2u.out " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_SubComponent" name="test_SubComponent_sc_2ua" time="0.717216" timestamp="2021_0616_21:14:25.194445 utc">
+			<failure message="AssertionError: Output/Compare file /work2/07431/tg867305/stampede2/sstcore-11.0.0/sst_test_outputs/run_data/test_SubComponent_sc_2ua.out does not match Reference File /work2/07431/tg867305/stampede2/sstcore-11.0.0/tests/subcomponent_tests/refFiles/test_sc_2ua.out " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_SubComponent" name="test_SubComponent_sc_2uu" time="0.715038" timestamp="2021_0616_21:14:25.913040 utc">
+			<failure message="AssertionError: Output/Compare file /work2/07431/tg867305/stampede2/sstcore-11.0.0/sst_test_outputs/run_data/test_SubComponent_sc_2uu.out does not match Reference File /work2/07431/tg867305/stampede2/sstcore-11.0.0/tests/subcomponent_tests/refFiles/test_sc_2uu.out " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_SubComponent" name="test_SubComponent_sc_a" time="0.716160" timestamp="2021_0616_21:14:26.629450 utc">
+			<failure message="AssertionError: Output/Compare file /work2/07431/tg867305/stampede2/sstcore-11.0.0/sst_test_outputs/run_data/test_SubComponent_sc_a.out does not match Reference File /work2/07431/tg867305/stampede2/sstcore-11.0.0/tests/subcomponent_tests/refFiles/test_sc_a.out " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_SubComponent" name="test_SubComponent_sc_u" time="0.714970" timestamp="2021_0616_21:14:27.346931 utc">
+			<failure message="AssertionError: Output/Compare file /work2/07431/tg867305/stampede2/sstcore-11.0.0/sst_test_outputs/run_data/test_SubComponent_sc_u.out does not match Reference File /work2/07431/tg867305/stampede2/sstcore-11.0.0/tests/subcomponent_tests/refFiles/test_sc_u.out " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_SubComponent" name="test_SubComponent_sc_u2a" time="0.716085" timestamp="2021_0616_21:14:28.063263 utc">
+			<failure message="AssertionError: Output/Compare file /work2/07431/tg867305/stampede2/sstcore-11.0.0/sst_test_outputs/run_data/test_SubComponent_sc_u2a.out does not match Reference File /work2/07431/tg867305/stampede2/sstcore-11.0.0/tests/subcomponent_tests/refFiles/test_sc_u2a.out " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_SubComponent" name="test_SubComponent_sc_u2u" time="0.707562" timestamp="2021_0616_21:14:28.780729 utc">
+			<failure message="AssertionError: Output/Compare file /work2/07431/tg867305/stampede2/sstcore-11.0.0/sst_test_outputs/run_data/test_SubComponent_sc_u2u.out does not match Reference File /work2/07431/tg867305/stampede2/sstcore-11.0.0/tests/subcomponent_tests/refFiles/test_sc_u2u.out " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_SubComponent" name="test_SubComponent_sc_ua" time="0.713878" timestamp="2021_0616_21:14:29.489659 utc">
+			<failure message="AssertionError: Output/Compare file /work2/07431/tg867305/stampede2/sstcore-11.0.0/sst_test_outputs/run_data/test_SubComponent_sc_ua.out does not match Reference File /work2/07431/tg867305/stampede2/sstcore-11.0.0/tests/subcomponent_tests/refFiles/test_sc_ua.out " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_SubComponent" name="test_SubComponent_sc_uu" time="0.721975" timestamp="2021_0616_21:14:30.204900 utc">
+			<failure message="AssertionError: Output/Compare file /work2/07431/tg867305/stampede2/sstcore-11.0.0/sst_test_outputs/run_data/test_SubComponent_sc_uu.out does not match Reference File /work2/07431/tg867305/stampede2/sstcore-11.0.0/tests/subcomponent_tests/refFiles/test_sc_uu.out " type="failure"/>
+		</testcase>
+	</testsuite>
+</testsuites>

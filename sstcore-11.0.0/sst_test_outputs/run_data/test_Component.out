@@ -1,0 +1,118 @@
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              login2
+  Local adapter:           hfi1_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   login2
+  Local device: hfi1_0
+--------------------------------------------------------------------------
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Component Finished.
+Simulation is complete, simulated time: 25 us

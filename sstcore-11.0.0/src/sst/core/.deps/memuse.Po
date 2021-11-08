@@ -1,0 +1,55 @@
+memuse.o: memuse.cc /usr/include/stdc-predef.h sst_config.h \
+ ../../../src/sst/core/memuse.h /usr/include/inttypes.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /opt/apps/gcc/6.3.0/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h \
+ ../../../src/sst/core/warnmacros.h /usr/include/sys/resource.h \
+ /usr/include/bits/resource.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/bits/time.h \
+ /work2/07431/tg867305/stampede2/openmpi-4.0.5/include/mpi.h \
+ /opt/apps/gcc/6.3.0/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include/stddef.h \
+ /work2/07431/tg867305/stampede2/openmpi-4.0.5/include/mpi_portable_platform.h
+
+/usr/include/stdc-predef.h:
+
+sst_config.h:
+
+../../../src/sst/core/memuse.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/opt/apps/gcc/6.3.0/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+../../../src/sst/core/warnmacros.h:
+
+/usr/include/sys/resource.h:
+
+/usr/include/bits/resource.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/time.h:
+
+/work2/07431/tg867305/stampede2/openmpi-4.0.5/include/mpi.h:
+
+/opt/apps/gcc/6.3.0/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include/stddef.h:
+
+/work2/07431/tg867305/stampede2/openmpi-4.0.5/include/mpi_portable_platform.h:
