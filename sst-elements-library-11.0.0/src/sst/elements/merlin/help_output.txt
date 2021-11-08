@@ -1,0 +1,423 @@
+('Hey this is debug', ['Component', 'Link', 'ModuleLoader', 'Statistic', 'StatisticGroup', 'StatisticOutput', 'SubComponent', 'UnitAlgebra', '__doc__', '__name__', '__package__', '__path__', 'addGlobalParam', 'addGlobalParams', 'enableAllStatisticsForAllComponents', 'enableAllStatisticsForComponentName', 'enableAllStatisticsForComponentType', 'enableStatisticForComponentName', 'enableStatisticForComponentType', 'enableStatisticsForComponentName', 'enableStatisticsForComponentType', 'exit', 'findComponentByName', 'getElapsedExecutionTime', 'getLocalMemoryUsage', 'getMPIRankCount', 'getProgramOptions', 'getThreadCount', 'popNamePrefix', 'pushNamePrefix', 'setProgramOption', 'setProgramOptions', 'setStatisticLoadLevel', 'setStatisticLoadLevelForComponentName', 'setStatisticLoadLevelForComponentType', 'setStatisticOutput', 'setStatisticOutputOption', 'setStatisticOutputOptions', 'setThreadCount'])
+Help on package sst:
+
+NAME
+    sst
+
+FILE
+    (built-in)
+
+PACKAGE CONTENTS
+
+
+CLASSES
+    __builtin__.object
+        Component
+        Link
+        Statistic
+        StatisticGroup
+        StatisticOutput
+        SubComponent
+        UnitAlgebra
+    
+    class Component(__builtin__.object)
+     |  SST Component
+     |  
+     |  Methods defined here:
+     |  
+     |  __cmp__(...)
+     |      x.__cmp__(y) <==> cmp(x,y)
+     |  
+     |  __init__(...)
+     |      x.__init__(...) initializes x; see help(type(x)) for signature
+     |  
+     |  addGlobalParamSet(...)
+     |      Add global parameter set to the component
+     |  
+     |  addLink(...)
+     |      Connects this component to a Link
+     |  
+     |  addParam(...)
+     |      Adds a parameter(name, value)
+     |  
+     |  addParams(...)
+     |      Adds Multiple Parameters from a dict
+     |  
+     |  createStatistic(...)
+     |      Create a Statistics in the component with optional parameters
+     |  
+     |  enableAllStatistics(...)
+     |      Enable all Statistics in the component with optional parameters
+     |  
+     |  enableStatistic(...)
+     |      Enable a statistic with a name and return a handle to it
+     |  
+     |  enableStatistics(...)
+     |      Enables Multiple Statistics in the component with optional parameters
+     |  
+     |  getFullName(...)
+     |      Returns the full name of the component.
+     |  
+     |  getType(...)
+     |      Returns the type of the component.
+     |  
+     |  setCoordinates(...)
+     |      Set (X,Y,Z) coordinates of this component, for use with visualization
+     |  
+     |  setRank(...)
+     |      Sets which rank on which this component should sit
+     |  
+     |  setStatistic(...)
+     |      Bind a statistic with name <name>
+     |  
+     |  setStatisticLoadLevel(...)
+     |      Sets the statistics load level for this component
+     |  
+     |  setSubComponent(...)
+     |      Bind a subcomponent to slot <name>, with type <type>
+     |  
+     |  setWeight(...)
+     |      Sets the weight of the component
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __new__ = <built-in method __new__ of type object>
+     |      T.__new__(S, ...) -> a new object with type S, a subtype of T
+    
+    class Link(__builtin__.object)
+     |  SST Link
+     |  
+     |  Methods defined here:
+     |  
+     |  __init__(...)
+     |      x.__init__(...) initializes x; see help(type(x)) for signature
+     |  
+     |  connect(...)
+     |      Connects two components to a Link
+     |  
+     |  setNoCut(...)
+     |      Specifies that this link should not be partitioned across
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __new__ = <built-in method __new__ of type object>
+     |      T.__new__(S, ...) -> a new object with type S, a subtype of T
+    
+    class Statistic(__builtin__.object)
+     |  SST Statistic
+     |  
+     |  Methods defined here:
+     |  
+     |  __init__(...)
+     |      x.__init__(...) initializes x; see help(type(x)) for signature
+     |  
+     |  addParam(...)
+     |      Adds a parameter(name, value)
+     |  
+     |  addParams(...)
+     |      Adds Multiple Parameters from a dict
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __new__ = <built-in method __new__ of type object>
+     |      T.__new__(S, ...) -> a new object with type S, a subtype of T
+    
+    class StatisticGroup(__builtin__.object)
+     |  SST Statistic Group
+     |  
+     |  Methods defined here:
+     |  
+     |  __init__(...)
+     |      x.__init__(...) initializes x; see help(type(x)) for signature
+     |  
+     |  addComponent(...)
+     |      Add a component to the group
+     |  
+     |  addStatistic(...)
+     |      Add a new statistic to the group
+     |  
+     |  setFrequency(...)
+     |      Set the frequency or rate (ie: "10ms", "25khz") to write out the statistics
+     |  
+     |  setOutput(...)
+     |      Configure how the stats should be written
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __new__ = <built-in method __new__ of type object>
+     |      T.__new__(S, ...) -> a new object with type S, a subtype of T
+    
+    class StatisticOutput(__builtin__.object)
+     |  SST Statistic Output
+     |  
+     |  Methods defined here:
+     |  
+     |  __init__(...)
+     |      x.__init__(...) initializes x; see help(type(x)) for signature
+     |  
+     |  addParam(...)
+     |      Adds a parameter(name, value)
+     |  
+     |  addParams(...)
+     |      Adds Multiple Parameters from a dict
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __new__ = <built-in method __new__ of type object>
+     |      T.__new__(S, ...) -> a new object with type S, a subtype of T
+    
+    class SubComponent(__builtin__.object)
+     |  SST SubComponent
+     |  
+     |  Methods defined here:
+     |  
+     |  __init__(...)
+     |      x.__init__(...) initializes x; see help(type(x)) for signature
+     |  
+     |  addGlobalParamSet(...)
+     |      Add global parameter set to the component
+     |  
+     |  addLink(...)
+     |      Connects this subComponent to a Link
+     |  
+     |  addParam(...)
+     |      Adds a parameter(name, value)
+     |  
+     |  addParams(...)
+     |      Adds Multiple Parameters from a dict
+     |  
+     |  enableAllStatistics(...)
+     |      Enable all Statistics in the component with optional parameters
+     |  
+     |  enableStatistic(...)
+     |      Enable a statistic with a name and return a handle to it
+     |  
+     |  enableStatistics(...)
+     |      Enables Multiple Statistics in the component with optional parameters
+     |  
+     |  getFullName(...)
+     |      Returns the full name, after any prefix, of the component.
+     |  
+     |  getType(...)
+     |      Returns the type of the component.
+     |  
+     |  setCoordinates(...)
+     |      Set (X,Y,Z) coordinates of this component, for use with visualization
+     |  
+     |  setStatistic(...)
+     |      Reuse a statistic for the binding
+     |  
+     |  setStatisticLoadLevel(...)
+     |      Sets the statistics load level for this component
+     |  
+     |  setSubComponent(...)
+     |      Bind a subcomponent to slot <name>, with type <type>
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __new__ = <built-in method __new__ of type object>
+     |      T.__new__(S, ...) -> a new object with type S, a subtype of T
+    
+    class UnitAlgebra(__builtin__.object)
+     |  SST UnitAlgebra
+     |  
+     |  Methods defined here:
+     |  
+     |  __add__(...)
+     |      x.__add__(y) <==> x+y
+     |  
+     |  __div__(...)
+     |      x.__div__(y) <==> x/y
+     |  
+     |  __eq__(...)
+     |      x.__eq__(y) <==> x==y
+     |  
+     |  __float__(...)
+     |      x.__float__() <==> float(x)
+     |  
+     |  __ge__(...)
+     |      x.__ge__(y) <==> x>=y
+     |  
+     |  __gt__(...)
+     |      x.__gt__(y) <==> x>y
+     |  
+     |  __iadd__(...)
+     |      x.__iadd__(y) <==> x+=y
+     |  
+     |  __idiv__(...)
+     |      x.__idiv__(y) <==> x/=y
+     |  
+     |  __imul__(...)
+     |      x.__imul__(y) <==> x*=y
+     |  
+     |  __init__(...)
+     |      x.__init__(...) initializes x; see help(type(x)) for signature
+     |  
+     |  __int__(...)
+     |      x.__int__() <==> int(x)
+     |  
+     |  __isub__(...)
+     |      x.__isub__(y) <==> x-=y
+     |  
+     |  __itruediv__(...)
+     |      x.__itruediv__(y) <==> x/=y
+     |  
+     |  __le__(...)
+     |      x.__le__(y) <==> x<=y
+     |  
+     |  __long__(...)
+     |      x.__long__() <==> long(x)
+     |  
+     |  __lt__(...)
+     |      x.__lt__(y) <==> x<y
+     |  
+     |  __mul__(...)
+     |      x.__mul__(y) <==> x*y
+     |  
+     |  __ne__(...)
+     |      x.__ne__(y) <==> x!=y
+     |  
+     |  __neg__(...)
+     |      x.__neg__() <==> -x
+     |  
+     |  __nonzero__(...)
+     |      x.__nonzero__() <==> x != 0
+     |  
+     |  __radd__(...)
+     |      x.__radd__(y) <==> y+x
+     |  
+     |  __rdiv__(...)
+     |      x.__rdiv__(y) <==> y/x
+     |  
+     |  __repr__(...)
+     |      x.__repr__() <==> repr(x)
+     |  
+     |  __rmul__(...)
+     |      x.__rmul__(y) <==> y*x
+     |  
+     |  __rsub__(...)
+     |      x.__rsub__(y) <==> y-x
+     |  
+     |  __rtruediv__(...)
+     |      x.__rtruediv__(y) <==> y/x
+     |  
+     |  __str__(...)
+     |      x.__str__() <==> str(x)
+     |  
+     |  __sub__(...)
+     |      x.__sub__(y) <==> x-y
+     |  
+     |  __truediv__(...)
+     |      x.__truediv__(y) <==> x/y
+     |  
+     |  getFloatValue(...)
+     |      Returns value portion of UnitAlgebra as a float
+     |  
+     |  getRoundedValue(...)
+     |      Rounds value of UnitAlgebra to nearest whole number and returns a long
+     |  
+     |  hasUnits(...)
+     |      Checks to see if the UnitAlgebra has the specified units
+     |  
+     |  invert(...)
+     |      Inverts the UnitAlgebra value and units
+     |  
+     |  isValueZero(...)
+     |      Returns True if value is zero, false otherwise
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __new__ = <built-in method __new__ of type object>
+     |      T.__new__(S, ...) -> a new object with type S, a subtype of T
+
+FUNCTIONS
+    addGlobalParam(...)
+        Add a parameter to the specified global set.
+    
+    addGlobalParams(...)
+        Add parameters in dictionary to the specified global set.
+    
+    enableAllStatisticsForAllComponents(...)
+        Enables all statistics on all components with output at end of simulation.
+    
+    enableAllStatisticsForComponentName(...)
+        Enables all statistics on a component with output occurring at defined rate.
+    
+    enableAllStatisticsForComponentType(...)
+        Enables all statistics on all components of component type with output occurring at defined rate.
+    
+    enableStatisticForComponentName(...)
+        Enables a single statistic on a component with output occurring at defined rate.
+    
+    enableStatisticForComponentType(...)
+        Enables a single statistic on all components of component type with output occurring at defined rate.
+    
+    enableStatisticsForComponentName(...)
+        Enables a mulitple statistics on a component with output occurring at defined rate.
+    
+    enableStatisticsForComponentType(...)
+        Enables a list of statistics on all components of component type with output occurring at defined rate.
+    
+    exit(...)
+        Exits SST - indicates the script wanted to exit.
+    
+    findComponentByName(...)
+        Looks up to find a previously created component/subcomponent, based off of its name.  Returns None if none are to be found.
+    
+    getElapsedExecutionTime(...)
+        Gets the real elapsed time since simluation start, returned as a UnitAlgebra.  Not precise enough for getting fine timings.  For that, use the built-in time module.
+    
+    getLocalMemoryUsage(...)
+        Gets the current memory use, returned as a UnitAlgebra
+    
+    getMPIRankCount(...)
+        Gets the number of MPI ranks currently being used to run SST
+    
+    getProgramOptions(...)
+        Returns a dict of the current program options.
+    
+    getThreadCount(...)
+        Gets the number of MPI ranks currently being used to run SST
+    
+    popNamePrefix(...)
+        Removes the most recent addition to the prefix of new component and link names
+    
+    pushNamePrefix(...)
+        Pushes a string onto the prefix of new component and link names
+    
+    setProgramOption(...)
+        Sets a single program configuration option (form:  setProgramOption(name, value))
+    
+    setProgramOptions(...)
+        Sets multiple program configuration option from a dict.
+    
+    setStatisticLoadLevel(...)
+        Sets the Statistic Load Level (0 - 10) - default is 0 (disabled).
+    
+    setStatisticLoadLevelForComponentName(...)
+        Sets the statistic load level for the specified component name.
+    
+    setStatisticLoadLevelForComponentType(...)
+        Sets the statistic load level for all components of the specified type.
+    
+    setStatisticOutput(...)
+        Sets the Statistic Output - default is console output.
+    
+    setStatisticOutputOption(...)
+        Sets a single Statistic output option (form: setStatisticOutputOption(name, value))
+    
+    setStatisticOutputOptions(...)
+        Sets multiple Statistic output options from a dict.
+    
+    setThreadCount(...)
+        Gets the number of MPI ranks currently being used to run SST
+
+
+None

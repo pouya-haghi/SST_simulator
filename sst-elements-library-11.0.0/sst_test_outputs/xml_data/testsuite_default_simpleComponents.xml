@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="8" name="SST TESTING FRAMEWORKS" tests="8" time="14.8512158394">
+	<testsuite disabled="0" errors="0" failures="8" name="testsuite_default_simpleComponents" skipped="0" tests="8" time="14.8512158394">
+		<testcase classname="testcase_simpleComponents" name="test_basic_clocks" time="7.269307" timestamp="2021_0617_02:20:12.819276 utc">
+			<failure message="AssertionError: simpleComponents test basicClocks has Non-empty Error File /work2/07431/tg867305/stampede2/sst-elements-library-11.0.0/sst_test_outputs/run_data/basicClocks.err " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_simpleComponents" name="test_basic_links" time="1.803805" timestamp="2021_0617_02:20:20.089812 utc">
+			<failure message="AssertionError: simpleComponents test basicLinks has Non-empty Error File /work2/07431/tg867305/stampede2/sst-elements-library-11.0.0/sst_test_outputs/run_data/basicLinks.err " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_simpleComponents" name="test_basic_params" time="1.105057" timestamp="2021_0617_02:20:21.894811 utc">
+			<failure message="AssertionError: simpleComponents test basicParams has Non-empty Error File /work2/07431/tg867305/stampede2/sst-elements-library-11.0.0/sst_test_outputs/run_data/basicParams.err " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_simpleComponents" name="test_basic_statistics_0" time="1.154812" timestamp="2021_0617_02:20:23.001051 utc">
+			<failure message="AssertionError: simpleComponents test basicStatistics0 has Non-empty Error File /work2/07431/tg867305/stampede2/sst-elements-library-11.0.0/sst_test_outputs/run_data/basicStatistics0.err " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_simpleComponents" name="test_basic_statistics_1" time="1.210522" timestamp="2021_0617_02:20:24.157054 utc">
+			<failure message="AssertionError: simpleComponents test basicStatistics1 has Non-empty Error File /work2/07431/tg867305/stampede2/sst-elements-library-11.0.0/sst_test_outputs/run_data/basicStatistics1.err " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_simpleComponents" name="test_basic_statistics_2" time="0.901089" timestamp="2021_0617_02:20:25.368767 utc">
+			<failure message="AssertionError: simpleComponents test basicStatistics2 has Non-empty Error File /work2/07431/tg867305/stampede2/sst-elements-library-11.0.0/sst_test_outputs/run_data/basicStatistics2.err " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_simpleComponents" name="test_example_0" time="0.700928" timestamp="2021_0617_02:20:26.271048 utc">
+			<failure message="AssertionError: simpleComponents test example0 has Non-empty Error File /work2/07431/tg867305/stampede2/sst-elements-library-11.0.0/sst_test_outputs/run_data/example0.err " type="failure"/>
+		</testcase>
+		<testcase classname="testcase_simpleComponents" name="test_example_1" time="0.705696" timestamp="2021_0617_02:20:26.973177 utc">
+			<failure message="AssertionError: simpleComponents test example1 has Non-empty Error File /work2/07431/tg867305/stampede2/sst-elements-library-11.0.0/sst_test_outputs/run_data/example1.err " type="failure"/>
+		</testcase>
+	</testsuite>
+</testsuites>
