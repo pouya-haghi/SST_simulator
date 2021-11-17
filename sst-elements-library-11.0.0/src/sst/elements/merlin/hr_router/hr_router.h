@@ -52,6 +52,7 @@ public:
 
     SST_ELI_DOCUMENT_PARAMS(
         {"id",                 "ID of the router."},
+        {"level",              "This is the level of the router."},
         {"num_ports",          "Number of ports that the router has"},
         {"topology",           "Name of the topology subcomponent that should be loaded to control routing."},
         {"xbar_arb",           "Arbitration unit to be used for crossbar.","merlin.xbar_arb_lru"},
@@ -95,6 +96,8 @@ private:
     static int print_debug;
     int id;
     int num_ports;
+    int level;
+    int* collective_latency;
     int num_vns;
     std::string vn_remap_shm;
     int vn_remap_shm_size;

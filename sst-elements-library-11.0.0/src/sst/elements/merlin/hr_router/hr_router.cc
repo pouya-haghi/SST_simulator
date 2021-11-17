@@ -125,15 +125,26 @@ hr_router::hr_router(ComponentId_t cid, Params& params) :
 {
 
     // Get the options for the router
+
     id = params.find<int>("id",-1);
     if ( id == -1 ) {
         merlin_abort.fatal(CALL_INFO, -1, "hr_router requires id to be specified\n");
     }
 
+    // PH
+    collective_latency = new int [1024];
+    std::cout << "Please enter the latency of collective for router " << id << " :" << std::endl;
+    std::cin >> collective_latency[id];
+
     num_ports = params.find<int>("num_ports",-1);
     if ( num_ports == -1 ) {
         merlin_abort.fatal(CALL_INFO, -1, "hr_router requires num_ports to be specified\n");
     }
+
+    // level = params.find<int>("level",-1);
+    // if ( level == -1 ) {
+    //     merlin_abort.fatal(CALL_INFO, -1, "hr_router requires level to be specified\n");
+    // }
 
 
     // Get the number of VNs
@@ -188,6 +199,9 @@ hr_router::hr_router(ComponentId_t cid, Params& params) :
 
     // Link BW default.  Can be overwritten using logical groups
     std::string link_bw_s = params.find<std::string>("link_bw");
+
+    level = params.find<int>("level");
+    // std::cout << "Heyy, level is: " << level << std::endl;
     UnitAlgebra link_bw(link_bw_s);
 
     if ( link_bw.hasUnits("B/s") ) {
@@ -333,7 +347,7 @@ hr_router::notifyEvent()
 #endif
 
     // int64_t elapsed_cycles = next_cycle - unclocked_cycle;
-    int64_t elapsed_cycles = unclocked_cycle - next_cycle; //-30
+    int64_t elapsed_cycles = unclocked_cycle - next_cycle - collective_latency[id]; //-30
 
 
 #if !VERIFY_DECLOCKING
@@ -350,7 +364,7 @@ hr_router::notifyEvent()
         }
         tmp = out_port_busy[i] - elapsed_cycles;
         // PH: $start - "print busy ports"
-        std::cout << "busy_out " << tmp << " port_number " << i << std::endl;
+        std::cout << "busy_out " << tmp << " port_number " << i << " id " << id << std::endl;
         // PH: $end
     	if ( tmp < 0 ) out_port_busy[i] = 0;
         else {out_port_busy[i] = tmp;

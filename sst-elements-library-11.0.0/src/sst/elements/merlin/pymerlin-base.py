@@ -730,6 +730,7 @@ class hr_router(RouterTemplate):
         self._applyStatisticsSettings(rtr)
         rtr.addGlobalParamSet("%s_params"%self._instance_name)
         rtr.addParam("num_ports",radix)
+        rtr.addParam("level",88)
         rtr.addParam("id",rtr_id)
         return rtr
 

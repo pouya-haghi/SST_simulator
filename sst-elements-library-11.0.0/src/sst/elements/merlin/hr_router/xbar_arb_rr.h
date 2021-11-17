@@ -47,6 +47,7 @@ public:
 private:
     int num_ports;
     int num_vcs;
+    int level;
 
     int *rr_vcs;
     int rr_port;

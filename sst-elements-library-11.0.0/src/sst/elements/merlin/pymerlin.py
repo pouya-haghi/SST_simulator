@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-#supports 3 levels of swithces
 #
 # Copyright 2009-2021 NTESS. Under the terms
 # of Contract DE-NA0003525 with NTESS, the U.S.
@@ -64,6 +63,7 @@ _params["input_latency"] = "20ns"
 _params["output_latency"] = "120ns"
 _params["input_buf_size"] = "4kB"
 _params["output_buf_size"] = "4kB"
+_params["level"] = "5"
 debug = 0
 
 class Topo(object):
@@ -178,6 +178,7 @@ class topoTorus(Topo):
         _params["debug"] = debug
         _params["num_ports"] = _params["router_radix"] = radix
         _params["torus:local_ports"] = local_ports
+        _params["level"] = 9
 
     def _formatShape(self, arr):
         return 'x'.join([str(x) for x in arr])
@@ -229,6 +230,7 @@ class topoTorus(Topo):
             #rtr = sst.Component("rtr.%s"%mylocstr, "merlin.hr_router")
             rtr.addParams(_params.subset(self.topoKeys, self.topoOptKeys))
             rtr.addParam("id", i)
+            rtr.addParam("level", 8) # PH: added
             topology = rtr.setSubComponent("topology","merlin.torus")
             topology.addParams(_topo_params)
 
